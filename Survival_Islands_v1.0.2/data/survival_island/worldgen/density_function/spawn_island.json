@@ -1,0 +1,123 @@
+{
+  "type": "more_dfs:subtract",
+  "argument1": {
+    "type": "more_dfs:sqrt",
+    "argument": {
+      "type": "minecraft:add",
+      "argument1": {
+        "type": "minecraft:square",
+        "argument": {
+          "type": "more_dfs:x"
+        }
+      },
+      "argument2": {
+        "type": "minecraft:square",
+        "argument": {
+          "type": "more_dfs:z"
+        }
+      }
+    }
+  },
+  "argument2": {
+    "type": "more_dfs:sqrt",
+    "argument": {
+      "type": "minecraft:add",
+      "argument1": "survival_island:scale_a",
+      "argument2": {
+        "type": "minecraft:mul",
+        "argument1": "survival_island:scale_b",
+        "argument2": {
+          "type": "minecraft:add",
+          "argument1": {
+            "type": "more_dfs:sine",
+            "argument": {
+              "type": "minecraft:mul",
+              "argument1": "survival_island:scale_c",
+              "argument2": {
+                "type": "more_dfs:x"
+              }
+            }
+          },
+          "argument2": {
+            "type": "minecraft:add",
+            "argument1": {
+              "type": "more_dfs:sine",
+              "argument": {
+                "type": "minecraft:mul",
+                "argument1": {
+                  "type": "minecraft:mul",
+                  "argument1": "survival_island:scale_c",
+                  "argument2": "survival_island:constant_a"
+                },
+                "argument2": {
+                  "type": "more_dfs:x"
+                }
+              }
+            },
+            "argument2": {
+              "type": "minecraft:add",
+              "argument1": {
+                "type": "more_dfs:sine",
+                "argument": {
+                  "type": "minecraft:mul",
+                  "argument1": {
+                    "type": "minecraft:mul",
+                    "argument1": "survival_island:scale_c",
+                    "argument2": "survival_island:constant_b"
+                  },
+                  "argument2": {
+                    "type": "more_dfs:x"
+                  }
+                }
+              },
+              "argument2": {
+                "type": "minecraft:add",
+                "argument1": {
+                  "type": "more_dfs:sine",
+                  "argument": {
+                    "type": "minecraft:mul",
+                    "argument1": "survival_island:scale_c",
+                    "argument2": {
+                      "type": "more_dfs:z"
+                    }
+                  }
+                },
+                "argument2": {
+                  "type": "minecraft:add",
+                  "argument1": {
+                    "type": "more_dfs:sine",
+                    "argument": {
+                      "type": "minecraft:mul",
+                      "argument1": {
+                        "type": "minecraft:mul",
+                        "argument1": "survival_island:scale_c",
+                        "argument2": "survival_island:constant_a"
+                      },
+                      "argument2": {
+                        "type": "more_dfs:z"
+                      }
+                    }
+                  },
+                  "argument2": {
+                    "type": "more_dfs:sine",
+                    "argument": {
+                      "type": "minecraft:mul",
+                      "argument1": {
+                        "type": "minecraft:mul",
+                        "argument1": "survival_island:scale_c",
+                        "argument2": "survival_island:constant_b"
+                      },
+                      "argument2": {
+                        "type": "more_dfs:z"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

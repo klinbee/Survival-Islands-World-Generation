@@ -1,8 +1,48 @@
 {
-    "type": "range_choice",
-    "input": "minecraft:util/ocean_biomes",
-    "max_exclusive": -0.4,
-    "min_inclusive": -1.0,
-    "when_in_range": "minecraft:util/ocean_biomes_no_mushrooms",
-    "when_out_of_range": "minecraft:util/attempt_island_generation"
+  "type": "minecraft:spline",
+  "spline": {
+    "coordinate": "survival_island:spawn_island",
+    "points": [
+      {
+        "location": -10,
+        "derivative": 0,
+        "value": 0.2
+      },
+      {
+        "location": 10,
+        "derivative": 0,
+        "value": -0.12
+      },
+      {
+        "location": 50,
+        "derivative": 0,
+        "value": {
+          "coordinate": {
+            "type": "minecraft:flat_cache",
+            "argument": {
+              "type": "minecraft:shifted_noise",
+              "noise": "minecraft:continentalness",
+              "xz_scale": 0.25,
+              "y_scale": 0,
+              "shift_x": "minecraft:shift_x",
+              "shift_y": 0,
+              "shift_z": "minecraft:shift_z"
+            }
+          },
+          "points": [
+            {
+              "location": -1.05,
+              "derivative": 0,
+              "value": -0.9
+            },
+            {
+              "location": 1,
+              "derivative": 0,
+              "value": -0.25
+            }
+          ]
+        }
+      }
+    ]
+  }
 }
