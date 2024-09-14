@@ -9,12 +9,12 @@
         "value": 0.2
       },
       {
-        "location": 10,
+        "location": 5,
         "derivative": 0,
-        "value": -0.12
+        "value": -0.16
       },
       {
-        "location": 50,
+        "location": 20,
         "derivative": 0,
         "value": {
           "coordinate": {
