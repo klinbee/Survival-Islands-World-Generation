@@ -11,24 +11,21 @@
         "color": "#AAAAAA"
       },
       {
-        "text": "Quidvio",
-        "color": "#ffc76f"
+        "text": "Klinbee",
+        "color": "#ffbbbb"
       }
     ],
     "pack_format": 15,
-    "supported_formats": [
-      15,
-      999
-    ]
+    "min_format": 15,
+    "max_format": 999,
+    "supported_formats": [15, 999]
   },
   "overlays": {
     "entries": [
       {
-        "formats": [
-          999,
-          999
-        ],
-        "directory": "overlay1"
+        "min_format": 88,
+        "max_format": 999,
+        "directory": "overlay_1_21_9"
       }
     ]
   }
